@@ -31,4 +31,16 @@ models:
     - name: minimum_nights
       description: '{{ doc("dim_listing_cleansed__minimum_nights") }}'
       
+  - name: dim_hosts_cleansed
+    description: Cleansed table which contains Airbnb hosts
+    columns:
+
+    - name: host_id
+      description: Reference to host table
+    - name: host_name
+      description: Name of the host
+    - name: is_superhost
+      description: whether host is a super host
+
+
         
